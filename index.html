@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title> L4P </title>
+    <link href="css/style.min.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" type="text/css" href="slick.css">
+</head>
+<body>
+
+<div class="modal" id="modal">
+    <div class="modal__overlay modal-close"></div>
+    <div class="modal__form form">
+        <img class="modal-close" src="img/close.svg">
+        <form action="/thanks.html">
+            <div class="form__select">
+                <select>
+                    <option value="Вёрстка"> Вёрстка </option>
+                    <option value="3D-моделирование"> 3D-моделирование </option>
+                    <option value="Векторная графика"> Векторная графика </option>
+                    <option value="Растровая графика"> Растровая графика </option>
+                    <option value="Видеомонтаж" > Видеомонтаж </option>
+                </select>
+            </div>
+            <input type="text" class="form__input" name="name" placeholder="Имя" required>
+            <input type="number" class="form__input" name="number" placeholder="Телефон" required>
+            <input type="email" class="form__input" name="Email" placeholder="Email" required>
+            <input type="submit" class="form__button" value="Записаться">
+        </form>
+    </div>
+</div>
+
+<div class="header">
+    <div class="header__wrap">
+        <a href="#main" class="header__logo"><img src="img/logo.svg"></a>
+        <div class="header__links">
+            <a href="#portfolio"><div class="header__link"> Портфолио </div></a>
+            <a href="#about"><div class="header__link"> О себе </div></a>
+            <a href="#services"><div class="header__link"> Услуги </div></a>
+            <a href="#footer"><div class="header__link"> Контакты </div></a>
+        </div>
+        <button class="header__button modal-button"> Заказать </button>
+    </div>
+</div>
+
+<div class="main" id="main">
+    <div class="main__wrap">
+        <div class="main__block">
+            <span class="main__text-big"> убойно <span class="main__text-small"> как пулевой 12го </span></span>
+            <span class="main__text-big"> быстро <span class="main__text-small"> как 5.56 </span></span>
+            <button class="main__button modal-button"> Заказать </button>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio" id="portfolio">
+    <div class="portfolio__title">
+        <p> Портфолио </p>
+    </div>
+    <div class="portfolio__slider">
+        <div class="portfolio__slide"><img src="img/slide1.jpg"></div>
+        <div class="portfolio__slide"><img src="img/slide2.jpg"></div>
+        <div class="portfolio__slide"><img src="img/slide3.jpg"></div>
+        <div class="portfolio__slide"><img src="img/slide4.jpg"></div>
+        <div class="portfolio__slide"><img src="img/slide5.jpg"></div>
+        <div class="portfolio__slide"><img src="img/slide6.jpg"></div>
+    </div>
+    <button class="portfolio__button"> Больше работ </button>
+</div>
+
+<div class="about" id="about">
+    <div class="about__wrap">
+        <div class="about__left">
+            <div class="about__competitions">
+                <p class="about__big"> Мои компетенции </p>
+            </div>
+
+            <div class="about__tabs tabs">
+                <div class="tabs__nav tabs-nav">
+                    <img class="tabs-nav__item" id="saturation" data-tab-name="tab-1" src="img/comp1.png">
+                    <img class="tabs-nav__item" id="saturation" data-tab-name="tab-2" src="img/comp2.png">
+                    <img class="tabs-nav__item" id="saturation" data-tab-name="tab-3" src="img/comp3.png">
+                    <img class="tabs-nav__item" id="saturation" data-tab-name="tab-4" src="img/comp4.png">
+                    <img class="tabs-nav__item" id="saturation" data-tab-name="tab-5" src="img/comp5.png">
+                </div>
+                <div class="tabs__content">
+                    <div class="tab tab-1">
+                        <p class="about__big"> Вёрстка </p>
+                        <p class="about__small">
+                        HTML, CSS, JS вёрстка сайта и адптив, по вашему или разработанному макету
+                        </p>
+                    </div>
+                    <div class="tab tab-2">
+                        <p class="about__big"> Figma </p>
+                        <p class="about__small">
+                        Разработка UI/UX дизайна сайта, создание карточек и постов для ваших соц. сетей, создание плакатов, логотипов и т.д.
+                        </p>
+                    </div>
+                    <div class="tab tab-3">
+                        <p class="about__big"> Blender </p>
+                        <p class="about__small">
+                        Создание 3D-моделей, сцен и анимаций по вашему заказу
+                        </p>
+                    </div>
+                    <div class="tab tab-4">
+                        <p class="about__big"> Photoshop </p>
+                        <p class="about__small">
+                        Обработка фотографий, создание постеров и прочих растровых изображений
+                        </p>
+                    </div>
+                    <div class="tab tab-5">
+                        <p class="about__big"> Sony Vegas </p>
+                        <p class="about__small">
+                        Монтаж и обработка видео
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__me" id="about-me">
+                <p class="about__big"> Обо мне </p>
+                <p class="about__small"> Молодой специалист </p>
+                <p class="about__small"> Студент РТУ МИРЭА </p>
+                <p class="about__small"> Обучаюсь на новом перспективном направлении  «Компьютерный дизайн» </p>
+            </div>
+        </div>
+        <div class="about__right">
+            <img src="img/animu.png">
+        </div>
+    </div>
+</div>
+
+<div class="services" id="services">
+    <div class="services__wrap">
+        <div class="services__title">
+            <p> Услуги </p>
+        </div>
+        <div class="services__list"> 
+            <div class="item">
+                <img src="img/item1.jpg" class="item__bg">
+                <p class="item__title"> Сайт </p>
+                <p class="item__text"> Разработка дизайна и вёрстка вашего сайта </p>
+            </div>
+            <div class="item">
+                <img src="img/item2.jpg" class="item__bg">
+                <p class="item__title"> Логотип </p>
+                <p class="item__text"> Разаработка и создание уникального логотипа </p>
+            </div>
+            <div class="item">
+                <img src="img/item3.jpg" class="item__bg">
+                <p class="item__title"> Картинки </p>
+                <p class="item__text"> Создание и обрабока изображений  </p>
+            </div>
+            <div class="item">
+                <img src="img/item4.jpg" class="item__bg">
+                <p class="item__title"> Больше услуг </p>
+                <p class="item__text"> Ознакомиться с полным списком услуг </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer" id="footer">
+    <div class="footer__wrap">
+        <div class="footer__left">
+            <img src="img/logo-black.svg">
+            <a href=""> Бриф на дизайн сайта </a>
+            <a href=""> Бриф на лендинг </a>
+        </div>
+        <div class="footer__right">
+            <p> Контакты </p>
+            <div class="footer__links">
+                <img src="img/sm1.png">
+                <img src="img/sm2.png">
+                <img src="img/sm3.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/slider.js" ></script>
+    <script src="js/tab.js" ></script>
+    <script src="js/modal.js" ></script>
+</body>
+</html>

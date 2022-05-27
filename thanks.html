@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title> Thanks </title>
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <style type="text/css">
+        * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        }
+        @font-face {
+            font-family: Roboto-Thin; 
+            src: url(../fonts/Roboto-Thin.woff2);
+        }
+        @font-face {
+            font-family: Roboto-Medium; 
+            src: url(../fonts/Roboto-Medium.woff2);
+        }
+        
+        body {
+            background-color: #1A1A1A;
+            background-image: url(../img/bg.png);
+        }
+
+        .thanks {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap {
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #fff;
+            text-align: center;
+        }
+        img {
+            height: 80px;
+            pointer-events: none;
+        }
+        #t1 {
+            font-family: Roboto-Medium; 
+            font-size: 39.06px;
+            line-height: 122%;
+        }
+        #t2 {
+            font-family: Roboto-Thin;  
+            font-size: 20px;
+            line-height: 120%;
+            margin: 8px 0 32px 0;
+        }
+        #t3 {
+            font-family: Roboto-Thin;  
+            font-size: 12.8px;
+            line-height: 125%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="thanks">
+        <div class="wrap">
+            <img src="img/logo.svg">
+            <p id="t1"> Спасибо что выбрали меня </p>
+            <p id="t2"> В ближайшее время я вам отвечу </p>
+            <p id="t3"> Через 5 секунд вы вернётесь на главный экран </p>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function(){
+            location.href='index.html';
+        },5000)
+    </script>
+</body>
+</html>
